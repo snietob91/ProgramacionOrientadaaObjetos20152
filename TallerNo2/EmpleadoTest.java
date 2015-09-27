@@ -19,6 +19,8 @@ public class EmpleadoTest {
 			System.out.print(empleados[c].getNombre()+" ");
 			System.out.print(empleados[c].getApellido()+" ");
 			System.out.print("Salario anual"+" ");
+			/* La siguiente linea se puede  cambian utilizando una salida con formato con una precision de dos de
+			decimales*/
 			System.out.print(empleados[c].getSalarioAnual());
 			System.out.println("");
 		}
