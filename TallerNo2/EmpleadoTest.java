@@ -1,7 +1,12 @@
-
+/*
+Diego A. Rueda Robles
+29-09-2015 10:00 am
+La clase sirve para testear el funcionamiento de la clase Empleado
+*/
 public class EmpleadoTest {
 
 	public static void main(String[] args) {
+		/*Declaracion  e instanciacion de  un arreglo de  5 empleados*/
 		Empleado[] empleados= new Empleado[5];
 		empleados[0]= new Empleado("Diego A.","Rueda",3420);
 		empleados[1]= new Empleado("Carolina","Mendez",870);
