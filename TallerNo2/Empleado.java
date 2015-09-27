@@ -1,4 +1,8 @@
-
+/*
+Autor Diego A. Rueda Robles
+26-09-2015-09:30 am
+La clase es una abstraccion de lo que seria un empleado con algunas variables  caracteristicas como nombre y salario
+*/
 public class Empleado {
 	private String nombre;
 	private String apellido;
