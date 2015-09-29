@@ -21,14 +21,20 @@ public class PruebaDemostracionFile
 			System.out.println("Bienvenido  a la consola");
 			CopyOffileInputStream pod= new CopyOffileInputStream(aplicacion.getNombreArchivo());
 			String palabras= pod.str;
-			String[] tokens = palabras.split( " " );
+			String[] tokens = palabras.split( " " );/*Palabras del archivo a un arreglo*/
 			System.out.println(tokens.length);
-			System.out.println(tokens[0]);
 			for(int i=0;i<tokens.length;i++)
 				{
-					System.out.println(tokens[i]);
+					System.out.println(tokens[i]);/*Para mostrar todas las palabras*/
 	   
 				}
+			
+			System.out.println("La palabra con la que competirá es");
+			Random aleatorio = new Random();
+			int minimo=0;
+			int maximo=tokens.length-1;
+			/*Imprime la palabra aleatoria  con la que se competira*/
+			System.out.println(tokens[(int)(aleatorio.nextDouble() * maximo + minimo)]);
    
    
 		}
