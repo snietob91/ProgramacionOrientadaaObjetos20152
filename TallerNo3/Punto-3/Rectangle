@@ -1,0 +1,34 @@
+package taller3.pkg1;
+
+public class Rectangle extends Quadrilateral{ //Inicialización de la subclase Rectangle
+    private int area,lado,altura;
+    public Rectangle ( int x, int y){//Agregar el inicio de la variable area para cualquier rectangulo
+        super (x,y);
+        this.area=0;
+    }
+    public void setSide(int x,int y){//Operación interna para hallar el valor del lado
+        this.lado=y-x;
+    }
+    public void setAltura(int x,int y){//Operación interna para hallar el valor de la altura
+        this.altura=y-x;
+    }
+    
+    public void setArea(){//Operación interna para hallar el área del rectángulo
+        area=lado*altura;
+    }
+    public int getSide (){ //Operación que devuelve el valor del lado
+        return lado;
+    }
+    public int getAltura (){//Operación que devuelve el valor de la altura
+        return altura;
+    }
+    public int getArea (){//Operación que devuelve el valor del area
+        return area;
+    }
+    public void mFXY(){ //Operación que escribe los datos representativos del rectángulo
+        System.out.println("El rectangulo tiene lado de "+getSide()+", una altura de "+getAltura()+
+        " y un area de "+getArea());
+        System.out.println();
+    }
+   
+}
