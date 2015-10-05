@@ -1,0 +1,26 @@
+package taller3.pkg1;
+
+public class Square extends Quadrilateral{//Inicialización de la subclase Cuadrado
+    private int area,lado;
+    public Square ( int x, int y){//Agregar el inicio de la variable area para cualquier cuadrado
+        super (x,y);
+        this.area=0;
+    }
+    public void setSide(int x,int y){//Operación interna para hallar el valor del lado
+        this.lado=y-x;
+    }
+    public void setArea(){//Operación interna para hallar el área del cuadrado
+        area=lado*lado;
+    }
+    public int getSide (){//Operación que devuelve el valor del lado
+        return lado;
+    }
+    public int getArea (){//Operación que devuelve el valor del area
+        return area;
+    }
+    public void mFXY(){ //Operación que escribe los datos representativos del cuadrado
+        System.out.println("El cuadrado tiene lado de "+getSide()+" y un area de "+getArea());
+        System.out.println();
+    }
+    
+}
