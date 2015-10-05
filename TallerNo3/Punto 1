@@ -1,0 +1,20 @@
+Integrantes   
+Diego Armando Rueda Robles
+Iván Ricardo Reyes Fajardo
+Sebastian Nieto	 Barón 
+1. Responda las siguientes preguntas:
+a. ¿Cuál cree que es rol de herencia en un programa de Java? 
+El rol principal de la herencia en Java se puede describir como la optimización del código del programa, puesto que se utilizan atributos y métodos de una clase en otras subclases. Ahorrando tiempo al utilizar líneas de código para varios propósitos.
+
+b. ¿Cómo la herencia promueve la reutilización de software? 
+La promueve debido al hecho de utilizar atributos y métodos de una clase en otras subclases. Esto a su vez reduce el tiempo de desarrollo de los programas
+
+c. ¿Cómo se podría explicar la Jerarquía (Hierarchy) en la programación orientada a objetos? 
+La jerarquía es una propiedad que permite una ordenación de las abstracciones. Las dos jerarquías más importantes de un sistema complejo son: 
+Estructura de clases (jerarquía “es-un”(is-a):generalización/especialización)
+Estructura de objetos (jerarquía “parte de”(part-of):agregación)
+
+d. Explique la diferencia entre Composición (composition) y herencia. De un ejemplo. 
+En realidad son bastante relacionados la composición y la herencia: implica que si hay 2 objetos ninguno tenga sentido por separado pero que juntos si. La diferencia es que la herencia vuelve accesibles la lista de atributos de una clase dentro de otra. Mientras que la composición ambas clases se encuentran separadas y componen un programa entre las 2 durante la implementación de las mismas.La composición sirve cuando hacen falta las características de una clase existente dentro de una nueva pero no en su interfaz, los objetos privados pueden cambiarse en tiempo de ejecución. Herencia sirve para crear una clase especifica de una existente reutilizando su interfaz, la relación de herencia debe definirse en tiempo de compilación.
+e. En java una subclase puede heredar de máximo una superclase. En otros lenguajes como c++ es posible que una clase herede de más de una clase (Herencia múltiple). Explique los pros y contras de esta práctica.
+La principal desventajas son las posibles confusiones por objetos o métodos con el mismo nombre,  y problemas de compilación por esto mismo. Por otro la do las ventajas son las posibles optimizaciones de código, puesto que se ahorra bastante al reutilizar líneas de código.
