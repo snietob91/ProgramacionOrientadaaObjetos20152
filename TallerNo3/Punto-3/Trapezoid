@@ -1,0 +1,44 @@
+package taller3.pkg1;
+
+/**
+ *
+ * @author Equipo
+ */
+public class Trapezoid extends Quadrilateral{ //Inicialización de la subclase Trapezoid
+    private int area,lado1,lado2,altura;
+    public Trapezoid( int x, int y){//Agregar el inicio de la variable area para cualquier trapezoide
+        super (x,y);
+        this.area=0;
+    }
+    public void setSide1(int x,int y){//Operación interna para hallar el valor de la base
+        this.lado1=y-x;
+    }
+    public void setSide2(int x,int y){//Operación interna para hallar el valor del tope
+        this.lado2=x-y;
+    }
+    public void setAltura(int x,int y){//Operación interna para hallar el valor de la altura
+        this.altura=y-x;
+    }
+
+    public void setArea(){//Operación interna para hallar el área del rectángulo
+        area=(((lado1+lado2)/2)*altura);
+    }
+    public int getSide1 (){//Operación que devuelve el valor de la base
+        return lado1;
+    } 
+    public int getAltura (){//Operación que devuelve el valor de la altura
+        return altura;
+    }    
+    public int getSide2 (){//Operación que devuelve el valor del tope
+        return lado2;
+    }
+    public int getArea (){//Operación que devuelve el valor del area
+        return area;
+    }
+    public void mFXY(){//Operación que escribe los datos representativos del trapezoide
+        System.out.println("El trapezoide tiene una altura de "+getAltura()+
+                ", la base de "+getSide1()+", el tope de "+getSide2()+" y un area de "+getArea());
+        System.out.println();
+    }
+    
+}
