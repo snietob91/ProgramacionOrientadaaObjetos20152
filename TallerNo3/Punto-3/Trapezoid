@@ -1,9 +1,5 @@
 package taller3.pkg1;
 
-/**
- *
- * @author Equipo
- */
 public class Trapezoid extends Quadrilateral{ //Inicialización de la subclase Trapezoid
     private int area,lado1,lado2,altura;
     public Trapezoid( int x, int y){//Agregar el inicio de la variable area para cualquier trapezoide
