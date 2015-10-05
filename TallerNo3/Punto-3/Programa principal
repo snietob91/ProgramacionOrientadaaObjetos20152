@@ -1,0 +1,44 @@
+ackage taller3.pkg1;
+
+public class Taller31 {
+
+    public static void main(String[] args) {
+        
+        Square square1= new Square(4,2);
+        Square square2= new Square(8,2);
+        Square square3= new Square(4,6);
+        Square square4= new Square(8,6);
+        square1.setSide(square1.getX(),square2.getX());
+        square1.setArea();
+        square1.mFXY();
+        
+        Trapezoid trapezoid1= new Trapezoid(0,0);
+        Trapezoid trapezoid2= new Trapezoid(10,0);
+        Trapezoid trapezoid3= new Trapezoid(8,5);
+        Trapezoid trapezoid4= new Trapezoid(3,5);
+        trapezoid1.setAltura(trapezoid1.getY(),trapezoid4.getY());
+        trapezoid1.setSide1(trapezoid1.getX(),trapezoid2.getX());
+        trapezoid1.setSide2(trapezoid3.getX(),trapezoid4.getX());
+        trapezoid1.setArea();
+        trapezoid1.mFXY();
+        
+        Rectangle rectangle1= new Rectangle(17,14);
+        Rectangle rectangle2= new Rectangle(30,14);
+        Rectangle rectangle3= new Rectangle(30,28);
+        Rectangle rectangle4= new Rectangle(17,28);
+        rectangle1.setSide(rectangle1.getX(),rectangle2.getX());
+        rectangle1.setAltura(rectangle1.getY(),rectangle3.getY());
+        rectangle1.setArea();
+        rectangle1.mFXY();
+        
+        Paralellogram paralellogram1= new Paralellogram(5,5);
+        Paralellogram paralellogram2= new Paralellogram(11,5);
+        Paralellogram paralellogram3= new Paralellogram(12,20);
+        Paralellogram paralellogram4= new Paralellogram(6,20);
+        paralellogram1.setSide(paralellogram1.getX(),paralellogram2.getX());
+        paralellogram1.setAltura(paralellogram1.getY(),paralellogram3.getY());
+        paralellogram1.setArea();
+        paralellogram1.mFXY();
+    }
+    
+}
