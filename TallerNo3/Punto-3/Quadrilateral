@@ -1,0 +1,15 @@
+
+package taller3.pkg1;
+
+public class Quadrilateral { //Iniciación de la clase Quadrilateral
+    private int x,y;
+    
+    public Quadrilateral(int x,int y){//Iniciación de los valores de x y y para cualquier subclase de figura
+        
+        this.x=x;
+        this.y=y;
+    }
+
+    public int getX(){return x;} //Operación que muestra el valor de x      
+    public int getY(){return y;}// Operación que muestra el valor de y
+}
